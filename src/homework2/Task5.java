@@ -27,7 +27,6 @@ public class Task5 {
             }
             System.out.println("Сумма чисел от 1 до " + number + " = " + sum);
         }
-
         scanner.close();
     }
 }
