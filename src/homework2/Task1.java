@@ -22,7 +22,6 @@ public class Task1 {
         } else {
             System.out.println("Число нечетное");
         }
-
         scanner.close();
     }
 }
