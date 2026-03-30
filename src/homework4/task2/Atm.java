@@ -28,8 +28,8 @@ public class Atm {
     public void getNumberBills() {
         System.out.println(
                 "Количество купюр наминалом 20: " + quantity20 +
-                "\nКоличество купюр наминалом 50: " + quantity50 +
-                "\nКоличество купюр наминалом 100: " + quantity100
+                        "\nКоличество купюр наминалом 50: " + quantity50 +
+                        "\nКоличество купюр наминалом 100: " + quantity100
         );
     }
 
@@ -60,7 +60,7 @@ public class Atm {
         totalAmount = (quantity20 * 20) + (quantity50 * 50) + (quantity100 * 100);
 
         setTotalAmount(totalAmount);
-        System.out.println("Всего денег в банкомате: " + getTotalAmount());
+        System.out.printf("Всего денег в банкомате: %d", getTotalAmount());
     }
 
     public boolean withdrawalSum(int withdraw) {
@@ -89,7 +89,9 @@ public class Atm {
                     quantity100 -= give100;
                     totalAmount = (quantity20 * 20) + (quantity50 * 50) + (quantity100 * 100);
 
-                    System.out.println("Выдано: " + withdraw + " (100:" + give100 + ", 50:" + give50 + ", 20:" + give20 + ")");
+                    System.out.println(
+                            "Выдано: " + withdraw + " (100:" + give100 + ", 50:" + give50 + ", 20:" + give20 + ")"
+                    );
                     return true;
                 }
             }
