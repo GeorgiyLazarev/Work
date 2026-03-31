@@ -19,12 +19,16 @@ public class Clinic {
     public static void main(String[] args) {
         Therapist therapist = new Therapist("Терапевт");
 
-        Patient patient = new Patient(2);
-        Patient patient1 = new Patient(1);
-        Patient patient2 = new Patient(3);
+        Patient patient1 = new Patient(2);
+        Patient patient2 = new Patient(1);
+        Patient patient3 = new Patient(3);
 
-        therapist.assignDoctor(patient);
         therapist.assignDoctor(patient1);
         therapist.assignDoctor(patient2);
+        therapist.assignDoctor(patient3);
+
+        System.out.printf("Пациент 1 лечился у %s%n", patient1.doctor.getSpecialist());
+        System.out.printf("Пациент 2 лечился у %s%n", patient2.doctor.getSpecialist());
+        System.out.printf("Пациент 3 лечился у %s", patient3.doctor.getSpecialist());
     }
 }

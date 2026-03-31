@@ -35,7 +35,7 @@ public class CreditCard {
     }
 
     public void getInfo() {
-        System.out.println("Номер счета: " + numberScore + "\nБаланс счета: " + sumScore);
+        System.out.printf("------------%nНомер счета: %d%nБаланс счета: %d%n", getNumberScore(),getSumScore());
     }
 
     public void accrualSum(int accrual) {

@@ -18,10 +18,13 @@ public class Therapist extends Doctor {
 
     public void assignDoctor(Patient patient) {
         if (patient.getPlanTreatment() == 1) {
+            patient.doctor = surgeon;
             surgeon.treat();
         } else if (patient.getPlanTreatment() == 2) {
+            patient.doctor = dentist;
             dentist.treat();
         } else {
+            patient.doctor = this;
             this.treat();
         }
     }

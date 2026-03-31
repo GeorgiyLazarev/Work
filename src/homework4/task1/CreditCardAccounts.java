@@ -8,6 +8,10 @@ public class CreditCardAccounts {
 
         creditCard1.accrualSum(2398);
         creditCard2.accrualSum(10000);
-        creditCard3.withdrawalSum(32500);
+        creditCard3.withdrawalSum(32400);
+        System.out.println();
+        creditCard1.getInfo();
+        creditCard2.getInfo();
+        creditCard3.getInfo();
     }
 }
