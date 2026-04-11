@@ -30,7 +30,6 @@ public class Task1 extends ScannerClass {
                 little = integer;
                 littleString = number;
             }
-            System.out.printf("Строка 1: %s; Длина: %d%n", number, number.length());
         }
 
         System.out.println("-----------");

@@ -23,17 +23,15 @@ public class ScannerClass {
 
     //Метод сравнения символов
     public static boolean hasUniqueChars(String word) {
-        boolean thereNoMatch = false;
-        boolean coincidence = true;
 
         for (int i = 0; i < word.length(); i++) {
             for (int j = i + 1; j < word.length(); j++) {
                 if (word.charAt(i) == word.charAt(j)) {
-                    return thereNoMatch;
+                    return false;
                 }
             }
         }
-        return coincidence;
+        return true;
     }
 
     //Метод создания дубликатов каждой буквы строки
