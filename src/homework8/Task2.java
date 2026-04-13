@@ -10,4 +10,14 @@ package homework8;
  */
 
 public class Task2 {
+    public static void main(String[] args) {
+        AnimalCollection animalCollection = new AnimalCollection();
+        animalCollection.addAnimal("Коза1");
+        System.out.println(animalCollection.getAnimals());
+        animalCollection.addAnimal("Коза2");
+        animalCollection.addAnimal("Коза3");
+        animalCollection.addAnimal("Коза4");
+        animalCollection.removeAnimal();
+        System.out.println(animalCollection.getAnimals());
+    }
 }
